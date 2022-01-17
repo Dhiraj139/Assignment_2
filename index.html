@@ -36,13 +36,26 @@
         padding: 0;
         background-color: #ffffff;
         font-size: 15px;
-        height: 60px;
+        height: 78px;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
         color: #efffff;
       }
-      li {
-        display: inline-block;
+      .EC {
+        margin-left: 30%;
+        color: #5a5a5a;
+      }
+      .filter {
+        margin-left: 17.5%;
+        margin-top: 10px;
+      }
+      .filter_icon {
+        color: #3580c1;
+      }
+      .filter_text {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: #5a5a5a;
       }
       .icon {
         color: #333333;
@@ -58,6 +71,7 @@
         padding: 4px 14px;
         width: auto;
         color: #0084ff;
+        background-color: #fff;
         border: 1px solid #0084ff;
         margin: 5px;
         cursor: pointer;
@@ -83,6 +97,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 390px 390px 390px 390px;
+      }
+      i {
+        background-color: #ffffff;
       }
       .blog_image {
         width: 100%;
@@ -120,12 +137,14 @@
         font-size: 14px;
       }
       .discription {
+        overflow-wrap: break-word;
         font-style: normal;
         font-size: 14px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 20px 5px 5px 5px;
         color: #afafaf;
         text-decoration: none;
+        height: 50%;
       }
       a:link,
       a:visited,
@@ -155,21 +174,37 @@
       </p>
     </div>
     <header class="header">
-      <ul class="header">
-        <li>
-          <a href="https://www.edyoda.com/home">
-            <img
-              src="https://classroom.edyoda.com/static/media/edyoda_transparent_logo.55bcc00f.png"
-              alt="Edyoda logo"
-              height="60px"
-              class="grid_image"
-            />
-          </a>
-        </li>
-      </ul>
+      <table class="header">
+        <tr>
+          <td>
+            <a href="https://www.edyoda.com/home">
+              <img
+                src="https://classroom.edyoda.com/static/media/edyoda_transparent_logo.55bcc00f.png"
+                alt="Edyoda logo"
+                height="60px"
+                class="grid_image"
+              />
+            </a>
+          </td>
+          <td class="EC">
+            Explore Categories <i class="fas fa-caret-down"></i>
+          </td>
+        </tr>
+      </table>
     </header>
+
     <div class="page_margin">
       <h1>Trending Posts</h1>
+    </div>
+    <div class="filter">
+      <table>
+        <tr>
+          <td class="filter_icon">
+            <i class="fas fa-filter"></i>
+          </td>
+          <td class="filter_text">Filter by Category</td>
+        </tr>
+      </table>
     </div>
     <div class="button_div page_margin">
       <button class="container">All</button>
@@ -326,7 +361,6 @@
           <p class="discription">
             Did you ever dream a world where computers are connected and will
             communicate with one another to ultimately make decisions...
-            
           </p>
         </a>
       </i>
@@ -379,7 +413,6 @@
             Soft skills are seen to be as important as your technical skill set.
             When an organisation is hiring, soft skills is given a lot of
             weightage and thus becomes a very important...
-            
           </p>
         </a>
       </i>
@@ -415,7 +448,7 @@
           <p class="discription">
             Starting a career as a software developer obviously requires one to
             undertake a programming languages course that can cover everything
-            from the basics to even the minute details..
+            from the basics to even the minute details...
           </p>
         </a>
       </i>
@@ -425,3 +458,4 @@
     </footer>
   </body>
 </html>
+
